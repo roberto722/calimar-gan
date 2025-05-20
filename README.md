@@ -36,4 +36,4 @@ author = {Roberto Maria Scardigno and Antonio Brunetti and Pietro Maria Marvulli
 ```
 
 ## Contact
-If you have any question, please feel free to concat Roberto Scardigno (Email: r.scardigno.3@gmail.com)
+If you have any question, please feel free to contact Roberto Scardigno (Email: r.scardigno.3@gmail.com)
