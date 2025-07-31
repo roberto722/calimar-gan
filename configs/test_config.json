@@ -1,0 +1,16 @@
+{
+  "dataroot": "F:/Scardigno/CALIMAR-GAN/data/Datasets/SW_test_sim",
+  "name": "calimar_gan_pretrained",
+  "num_test": 14000,
+  "epoch": 100,
+  "model": "calimar_gan",
+  "dataset_mode": "unaligned_calimargan",
+  "no_dropout": true,
+  "norm": "instance",
+  "phase": "test",
+  "load_size": 256,
+  "crop_size": 256,
+  "batch_size": 64,
+  "no_flip": true,
+  "saveDisk": true
+}

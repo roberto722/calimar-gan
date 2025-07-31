@@ -1,0 +1,22 @@
+{
+  "dataroot": "F:/Scardigno/CALIMAR-GAN/data/Datasets/unpaired/fold_1s_2t",
+  "name": "calimar_gan_exp1",
+  "model": "calimar_gan",
+  "dataset_mode": "unaligned_calimargan",
+  "pool_size": 50,
+  "no_dropout": true,
+  "norm": "instance",
+  "lambda_A": 10,
+  "lambda_B": 10,
+  "lambda_identity": 0.8,
+  "load_size": 256,
+  "crop_size": 256,
+  "batch_size": 8,
+  "niter_decay": 40,
+  "niter": 60,
+  "display_id": 0,
+  "display_freq": 100,
+  "print_freq": 100,
+  "save_epoch_freq": 1,
+  "gan_mode": "lsgan"
+}
