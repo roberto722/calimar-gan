@@ -13,20 +13,31 @@ git clone https://github.com/roberto722/calimar-gan.git
 cd CalimarGAN
 ```
 
-2. (Recommended) Create a virtual environment:
+2. (Recommended) Create a Conda environment with Python 3.10:
 
 ```bash
-python -m venv venv
-source venv/bin/activate  # or venv\Scripts\activate on Windows
+conda create -n calimar-gan python=3.10
+conda activate calimar-gan
 ```
 
-3. Install required dependencies:
+3. Install dependencies (with CUDA support for Astra Toolbox), please follow the instructions in this exact order:
 
 ```bash
-pip install -r requirements.txt
+# Install astra-toolbox via conda (required for CUDA on Windows), via pip works only on Linux.
+conda install astra-toolbox -c astra-toolbox -c nvidia
+
+# Install PyTorch with CUDA 11.8 support
+pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+
+# Additional Python dependencies
+pip install opencv-python
+pip uninstall numpy==2.2.6
+
+pip install https://github.com/odlgroup/odl/archive/master.zip
+pip install dominate tqdm matplotlib
 ```
 
-> Ensure you have a compatible version of **PyTorch** with **CUDA** support if training on GPU.
+> Make sure you activate your Conda environment before running any scripts.
 
 ---
 
